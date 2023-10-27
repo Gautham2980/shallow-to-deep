@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shallow to Deepcopy</h1>
+    <p>const obj={
+        name:"John",
+        age:20,
+        fav:{
+            color:"red",
+            color1:"blue"
+        }
+    }<br>
+    
+    let obj2=JSON.parse(JSON.stringify(obj));<br>
+    
+    obj2.name="james";<br>
+    obj2.fav.color1="green";<br>
+    console.log(obj,obj2);</p>
+    <script src="js/main.js"></script>
+</body>
+</html>
